@@ -27,7 +27,7 @@ class UserDescription extends Component {
     render() {
         return (
             <div>
-                <img src={this.state.photo} /> <br />
+                <img src={this.state.photo} alt={this.state.name} /> <br />
                 My name is {this.state.name} <br />
                 I am {this.state.age} years old! <br />
                 My gender is {this.state.gender} <br />
