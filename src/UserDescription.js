@@ -16,7 +16,8 @@ class UserDescription extends Component {
             this.setState({
                 name: user.results[0].name.first,
                 gender: user.results[0].gender,
-                age: user.results[0].dob.age
+                age: user.results[0].dob.age,
+                photo: user.results[0].picture.medium
             })
         }).catch((err) => {
             console.log(err)
@@ -26,10 +27,10 @@ class UserDescription extends Component {
     render() {
         return (
             <div>
+                <img src={this.state.photo} /> <br />
                 My name is {this.state.name} <br />
                 I am {this.state.age} years old! <br />
-                I am interested in {this.state.gender} <br />
-
+                My gender is {this.state.gender} <br />
                 My height is {this.props.height}
                 {/* {console.log(this.state)} */}
             </div>
