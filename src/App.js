@@ -6,8 +6,6 @@ import UserDescription from './UserDescription';
 class App extends Component {
   
   render() {
-    var isHappy= false;
-
     return (
       <div className="App">
         <header className="App-header">
